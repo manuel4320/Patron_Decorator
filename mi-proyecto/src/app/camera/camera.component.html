@@ -1,0 +1,13 @@
+<h2>Camera</h2>
+
+<video #video autoplay style="display: none;"></video>
+
+<canvas #canvas width="640" height="480"></canvas>
+
+<div class="filter-buttons">
+  <button (click)="applyFilter('none')">Original</button>
+  <button (click)="applyFilter('grayscale')">Grayscale</button>
+  <button (click)="applyFilter('sepia')">Sepia</button>
+  <button (click)="applyFilter('brightness')">Brightness (+50%)</button>
+  <button (click)="applyFilter('invert')">Invert Colors</button>
+</div>
